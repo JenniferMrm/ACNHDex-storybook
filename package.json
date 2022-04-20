@@ -1,6 +1,9 @@
 {
   "name": "vue-project",
   "version": "0.0.0",
+  "browser": {
+    "[module-name]": false
+  },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
