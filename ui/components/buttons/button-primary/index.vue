@@ -1,6 +1,6 @@
 <template>
   <div class="btn-container">
-    <button>click</button>
+    <button>test</button>
   </div>
 </template>
 
