@@ -28,3 +28,6 @@ dist-ssr
 
 # VsCode extensions
 .history
+
+# Storybook
+storybook-static
