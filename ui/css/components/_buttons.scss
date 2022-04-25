@@ -1,0 +1,40 @@
+.button-primary {
+  width: fit-content;
+  background-color: $neutral-color-00;
+  box-shadow: $basic-shadow;
+  border-radius: 25px;
+  padding: 0 $spacing-s;
+  margin-top: 10px;
+  cursor: pointer;
+
+  &__content {
+    @include text-body-m;
+
+    background: none;
+    border: none;
+    color: $tertiary-color-3;
+    transition: $basic-transition;
+    cursor: pointer;
+    margin: $spacing-m 0;
+
+    @media #{$screen-tablet} {
+      @include text-body-l;
+
+      margin: $spacing-l 0;
+    }
+
+    @media #{$screen-above-tablet} {
+      @include text-body-l;
+
+      margin: $spacing-l 0;
+    }
+  }
+
+  &:hover {
+    .button-primary {
+      &__content {
+        color: $primary-color-3;
+      }
+    }
+  }
+}

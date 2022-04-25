@@ -3,7 +3,12 @@ import ButtonPrimary from "@ui/components/buttons/button-primary";
 export default {
   title: "Components/buttons/button-primary",
   component: ButtonPrimary,
-  argTypes: {},
+  argTypes: {
+    content: {
+      control: "text",
+      defaultValue: "Back to Home",
+    },
+  },
 };
 
 const Template = (args, { argTypes }) => ({
