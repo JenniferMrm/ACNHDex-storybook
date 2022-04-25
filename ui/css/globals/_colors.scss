@@ -1,0 +1,70 @@
+/* Color Tile component */
+.color-tile {
+  width: 300px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-s 0 $spacing-xs 0;
+  margin: $spacing-s $spacing-m;
+  border-radius: 20px;
+  background-color: $neutral-color-00;
+
+  $colors: (
+    "neutral-color-00": $neutral-color-00,
+    "neutral-color-10": $neutral-color-10,
+    "neutral-color-20": $neutral-color-20,
+    "neutral-color-30": $neutral-color-30,
+    "neutral-color-80": $neutral-color-80,
+    "neutral-color-90": $neutral-color-90,
+    "neutral-color-100": $neutral-color-100,
+    "primary-color-1": $primary-color-1,
+    "primary-color-2": $primary-color-2,
+    "primary-color-3": $primary-color-3,
+    "primary-color-4": $primary-color-4,
+    "secondary-color-1": $secondary-color-1,
+    "secondary-color-2": $secondary-color-2,
+    "secondary-color-3": $secondary-color-3,
+    "secondary-color-4": $secondary-color-4,
+    "tertiary-color-1": $tertiary-color-1,
+    "tertiary-color-2": $tertiary-color-2,
+    "tertiary-color-3": $tertiary-color-3,
+    "tertiary-color-4": $tertiary-color-4,
+  );
+
+  @each $name, $color in $colors {
+    .color-container--#{$name} {
+      background-color: $color;
+      width: 260px;
+      height: 120px;
+      border-radius: 10px;
+      border: 1px solid $neutral-color-80;
+      margin-bottom: $spacing-s;
+    }
+  }
+
+  p {
+    margin: 0 0 $spacing-xs 0;
+    padding-left: $spacing-xs;
+    color: $neutral-color-90;
+    align-self: flex-start;
+  }
+}
+
+/* Color Showcase */
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+  .tile-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 15px;
+  }
+
+  .separator {
+    height: 1px;
+    width: 90%;
+    border-bottom: 1px solid $neutral-color-80;
+  }
+}
