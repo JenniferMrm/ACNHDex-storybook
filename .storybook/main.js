@@ -7,7 +7,13 @@ module.exports = {
     "../ui/segments/**/*.stories.mdx",
     "../ui/segments/**/*.stories.@(js|jsx|ts|tsx)",
   ],
-  addons: [],
+  addons: [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/preset-scss",
+    "@storybook/addon-a11y",
+    "@whitespace/storybook-addon-html",
+  ],
   webpackFinal: async (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
