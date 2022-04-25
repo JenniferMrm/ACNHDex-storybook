@@ -2,6 +2,8 @@ const path = require("path");
 
 module.exports = {
   stories: [
+    "../ui/globals/**/*.stories.mdx",
+    "../ui/globals/**/*.stories.@(js|jsx|ts|tsx)",
     "../ui/components/**/*.stories.mdx",
     "../ui/components/**/*.stories.@(js|jsx|ts|tsx)",
     "../ui/segments/**/*.stories.mdx",
