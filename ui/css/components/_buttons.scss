@@ -1,3 +1,4 @@
+/* Button Primary component */
 .button-primary {
   width: fit-content;
   background-color: $neutral-color-00;
@@ -34,6 +35,44 @@
     .button-primary {
       &__content {
         color: $primary-color-3;
+      }
+    }
+  }
+}
+
+/* Up Button component */
+.up-button {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    z-index: 10;
+    position: fixed;
+    background-color: $tertiary-color-2;
+    transition: $basic-transition;
+
+    svg {
+      position: absolute;
+      top: 18px;
+      transform: rotate(180deg);
+
+      path {
+        transition: $basic-transition;
+      }
+    }
+
+    &:hover {
+      background-color: $secondary-color-2;
+      box-shadow: $basic-shadow;
+      cursor: pointer;
+
+      svg {
+        path {
+          fill: $tertiary-color-3;
+        }
       }
     }
   }
