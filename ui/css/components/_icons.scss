@@ -1,0 +1,20 @@
+$icon-colors: (
+  "nc-00": $neutral-color-00,
+  "nc-100": $neutral-color-100,
+  "tc-3": $tertiary-color-3,
+);
+
+@each $name, $color in $icon-colors {
+  .icon-#{$name} {
+    .icon-stroked {
+      fill: none;
+      fill-rule: evenodd;
+      stroke: $color;
+      stroke-width: 2px;
+    }
+
+    .icon-filled {
+      fill: $color;
+    }
+  }
+}
